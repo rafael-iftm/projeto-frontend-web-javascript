@@ -22,7 +22,7 @@
 
 ## Descrição
 
-Esta é a primeira aula do curso, realizada em 21 de fevereiro de 2024. Nesta aula, foram abordados conceitos fundamentais de JavaScript, incluindo diferentes formas de declarar funções e o uso do operador ternário.
+Na primeira aula do curso, realizada em 21 de fevereiro de 2024, foram abordados conceitos fundamentais de JavaScript. Os principais tópicos incluem: declaração de funções, uso do operador ternário, manipulação de arrays e eventos do DOM.
 
 ## Exemplos
 
