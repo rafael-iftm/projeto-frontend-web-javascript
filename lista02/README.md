@@ -1,31 +1,26 @@
-# Lista 01 - 06/03/2024
+# Lista de Exercícios: JS Array Interaction Methods
 
-## Estrutura de Pastas e Arquivos
+Esta é uma lista de exercícios desenvolvida para praticar o uso de métodos de interação de arrays em JavaScript, utilizando os conceitos de arrow functions e os métodos: `map()`, `forEach()`, `reduce()`, `filter()`, `every()`, e/ou `some()`. Esta lista foi elaborada para a disciplina de Projeto Front-End Web JavaScript, ministrada pelo Professor Wilton de Paula Filho.
 
-```
-📦lista01
- ┣ 📜index.html
- ┣ 📜README.md
- ┣ 📜scripts.js
- ┗ 📜scriptsEstudo.js
-```
+## Problemas Abordados
 
-### Lista 01
+Os problemas resolvidos nesta lista são os seguintes:
 
-A Lista 01 consiste em exercícios práticos destinados a reforçar e aplicar os conceitos fundamentais de JavaScript abordados durante a Aula 01 do curso. Os principais tópicos abordados na lista incluem:
+- **a) Soma das idades:** Utilizando o método `reduce()` para somar todas as idades do array.
+- **b) Média aritmética simples das idades:** Calculada dividindo a soma das idades pelo total de elementos do array.
+- **c) Maior idade:** Encontrada usando o método `Math.max()` em conjunto com o spread operator.
+- **d) Idades ímpares:** Filtradas utilizando o método `filter()` para selecionar apenas as idades que são ímpares.
+- **e) Verificação de maioridade:** Utilizando o método `every()` para verificar se todas as idades são maiores ou iguais a 18.
+- **f) Verificação de idade mínima:** Também com o método `every()`, mas desta vez verificando se todas as idades são maiores ou iguais a um valor informado pelo usuário.
+- **g) Exibição de idades acima de um valor especificado:** Utilizando o método `filter()` para selecionar as idades maiores ou iguais a uma idade especificada.
+- **h) Média das idades acima de uma idade especificada:** Calculada filtrando as idades maiores ou iguais a uma idade especificada e, em seguida, calculando a média dessas idades.
 
-1. **Declarar Funções**: Praticar diferentes formas de declarar funções em JavaScript, incluindo declaração declarativa, declaração literal, declaração anônima e arrow functions.
+## Execução
 
-2. **Operador Ternário**: Aplicar o operador ternário para criar expressões condicionais de forma mais concisa e legível.
+Para executar este código, basta abrir o arquivo `index.html` em um navegador da web. Os resultados serão exibidos na página HTML.
 
-3. **Manipulação de Arrays**: Realizar operações comuns em arrays, como calcular a soma dos elementos, encontrar o maior valor, filtrar elementos com base em critérios específicos e verificar se todos os elementos atendem a uma determinada condição. Isso inclui o uso de funções específicas de array como `every()`, `filter()`, `max()` e `reduce()`.
+## Implementação
 
-4. **Eventos e Manipulação do DOM**: Utilizar eventos do navegador, como o evento de carregamento da janela (`load`), e manipular o DOM (Document Object Model) para interagir com elementos HTML.
-
-5. **Prática de Resolução de Problemas**: Desenvolver habilidades de resolução de problemas ao abordar uma variedade de exercícios práticos que requerem a aplicação dos conceitos aprendidos.
-
-## Observações
-
-O operador ternário é uma ferramenta poderosa para escrever expressões condicionais de forma mais concisa e legível em JavaScript. Ele permite que você avalie uma condição e retorne um valor com base nessa condição em uma única linha de código.
-
-Para qualquer dúvida ou esclarecimento adicional, consulte os arquivos de exemplo fornecidos.
+- **HTML (`index.html`):** Este arquivo contém a estrutura básica da página web, incluindo um título e uma `div` para exibir os resultados.
+- **CSS (`styles.css`):** Este arquivo contém o estilo básico da página HTML para uma apresentação visual mais agradável.
+- **JavaScript (`script.js`):** Este arquivo contém a lógica de programação para resolver os problemas especificados. Os resultados são exibidos na página HTML.
