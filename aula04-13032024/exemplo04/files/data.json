@@ -1,0 +1,14 @@
+{
+  "usuarios": [
+    {
+      "nome": "Rafael Andrade Prado",
+      "idade": 23,
+      "descricao": "Abordagem utilizando Axios com arquivo JSON"
+    },
+    {
+      "nome": "Maria Silva",
+      "idade": 30,
+      "descricao": "Usuária fictícia com dados fictícios"
+    }
+  ]
+}
