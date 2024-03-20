@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     optionsSelect.addEventListener('change', function() {
         const selectedOption = optionsSelect.value;
         if (selectedOption !== 'selecione') {
-            fetch('alunos.json')
+            fetch('https://wilton-filho.github.io/PFJS-GitHub/bases/alunos.json')
                 .then(response => response.json())
                 .then(data => {
                     let filteredStudents = [];
