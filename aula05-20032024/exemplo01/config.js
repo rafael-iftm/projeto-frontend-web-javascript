@@ -1,0 +1,4 @@
+var config = {
+    apiKey: '6963d0c5240f7fb6024ccd2ba01f16f8',
+    readAccessTokenApi: 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2OTYzZDBjNTI0MGY3ZmI2MDI0Y2NkMmJhMDFmMTZmOCIsInN1YiI6IjY1ZmI3ZGY0YTg0ZmY3MDE0YWM1ZjRlZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.jGURXcZVeXU9K3DB6jzTfbKfdCcfLkjAyoAXguvJde8'
+};

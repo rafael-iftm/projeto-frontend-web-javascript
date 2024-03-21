@@ -14,33 +14,40 @@ document.addEventListener('DOMContentLoaded', function() {
 
         movieResults.innerHTML = '<p>Carregando resultados...</p>';
 
-        var token = process.env.API_KEY_MOVIE_DB;
+        var apiKey = config.apiKey;
+        var readAccessTokenApi = config.readAccessTokenApi;
 
-        var apiUrl = `https://api.themoviedb.org/3/search/movie?api_key=${token}&query=${encodeURIComponent(movieTitleInput)}`;
+        var apiUrl = `https://api.themoviedb.org/3/search/movie?query=${encodeURIComponent(movieTitleInput)}&api_key=${apiKey}`;
 
-        fetch(apiUrl)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Erro ao buscar filmes');
-                }
-                return response.json();
-            })
-            .then(data => {
-                if (data.results.length === 0) {
-                    movieResults.innerHTML = '<p>Nenhum filme encontrado.</p>';
-                    return;
-                }
+        fetch(apiUrl, {
+            method: 'GET',
+            headers: {
+                'Authorization': `Bearer ${readAccessTokenApi}`,
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Erro ao buscar filmes');
+            }
+            return response.json();
+        })
+        .then(data => {
+            if (data.results.length === 0) {
+                movieResults.innerHTML = '<p>Nenhum filme encontrado.</p>';
+                return;
+            }
 
-                var moviesList = '<ul>';
-                data.results.forEach(movie => {
-                    moviesList += `<li>${movie.title} (${movie.release_date.split('-')[0]})</li>`;
-                });
-                moviesList += '</ul>';
-
-                movieResults.innerHTML = moviesList;
-            })
-            .catch(error => {
-                movieResults.innerHTML = `<p>${error.message}</p>`;
+            var moviesList = '<ul>';
+            data.results.forEach(movie => {
+                moviesList += `<li>${movie.title} (${movie.release_date.split('-')[0]})</li>`;
             });
+            moviesList += '</ul>';
+
+            movieResults.innerHTML = moviesList;
+        })
+        .catch(error => {
+            movieResults.innerHTML = `<p>${error.message}</p>`;
+        });
     });
 });
