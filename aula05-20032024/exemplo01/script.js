@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
         var apiKey = config.apiKey;
         var readAccessTokenApi = config.readAccessTokenApi;
 
-        // Modifique a URL da API para incluir o parâmetro de consulta 'query' com o título do filme
         var apiUrl = `https://api.themoviedb.org/3/search/movie?query=${encodeURIComponent(movieTitleInput)}&api_key=${apiKey}`;
 
         fetch(apiUrl, {
