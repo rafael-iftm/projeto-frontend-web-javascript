@@ -5,8 +5,18 @@ document.addEventListener('DOMContentLoaded', function() {
     form.addEventListener('submit', function(event) {
         event.preventDefault();
         
-        var cepInput = document.getElementById('cep').value;
-        
+        var cepInput = document.getElementById('cep').value.trim();
+
+        if (cepInput === '') {
+            resultadoDiv.innerHTML = '<p>Por favor, digite um CEP válido.</p>';
+            return;
+        }
+
+        if (!/^\d{8}$/.test(cepInput)) {
+            resultadoDiv.innerHTML = '<p>O formato do CEP é inválido. Digite apenas os 8 dígitos.</p>';
+            return;
+        }
+
         fetch(`https://viacep.com.br/ws/${cepInput}/json/`)
             .then(response => {
                 if (!response.ok) {
