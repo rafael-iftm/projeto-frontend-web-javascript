@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var apiKey = config.apiKey;
         var readAccessTokenApi = config.readAccessTokenApi;
 
+        // Modifique a URL da API para incluir o parâmetro de consulta 'query' com o título do filme
         var apiUrl = `https://api.themoviedb.org/3/search/movie?query=${encodeURIComponent(movieTitleInput)}&api_key=${apiKey}`;
 
         fetch(apiUrl, {
@@ -34,13 +35,15 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .then(data => {
             if (data.results.length === 0) {
-                movieResults.innerHTML = '<p>Nenhum filme encontrado.</p>';
+                movieResults.innerHTML = '<p>Nenhum filme encontrado com esse título.</p>';
                 return;
             }
 
             var moviesList = '<ul>';
             data.results.forEach(movie => {
-                moviesList += `<li>${movie.title} (${movie.release_date.split('-')[0]})</li>`;
+                if (movie.title.toLowerCase() === movieTitleInput.toLowerCase()) {
+                    moviesList += `<li>${movie.title} (${movie.release_date.split('-')[0]})</li>`;
+                }
             });
             moviesList += '</ul>';
 
