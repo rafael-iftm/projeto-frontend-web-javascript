@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         movieResults.innerHTML = '<p>Carregando resultados...</p>';
 
-        var token = 'SEU_TOKEN_AQUI';
+        var token = process.env.API_KEY_MOVIE_DB;
 
         var apiUrl = `https://api.themoviedb.org/3/search/movie?api_key=${token}&query=${encodeURIComponent(movieTitleInput)}`;
 
