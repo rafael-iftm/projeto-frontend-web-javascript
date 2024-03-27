@@ -1,0 +1,43 @@
+{
+    "geladeiras": [
+      {
+        "Marca": "Brastemp",
+        "Modelo": "Geladeira Frost Free Duplex",
+        "Valor": 2997.00,
+        "imagem": "geladeira01.jpg"
+      },
+      {
+        "Marca": "Electrolux",
+        "Modelo": "Geladeira DC35A",
+        "Valor": 2159.00,
+        "imagem": "geladeira02.jpg"
+      },
+      {
+        "Marca": "Consul",
+        "Modelo": "Geladeira CRM39AB",
+        "Valor": 2499.00,
+        "imagem": "geladeira03.jpg"
+      }
+    ],
+    "celulares": [
+      {
+        "Marca": "Samsung",
+        "Modelo": "Smartphone S12",
+        "Valor": 5000.00,
+        "imagem": "celular01.jpg"
+      },
+      {
+        "Marca": "Motorola",
+        "Modelo": "Smartphone Moto G20",
+        "Valor": 1300.00,
+        "imagem": "celular02.jpg"
+      },
+      {
+        "Marca": "Apple",
+        "Modelo": "Smartphone Iphone 12",
+        "Valor": 4309.00,
+        "imagem": "celular03.jpg"
+      }
+    ]
+  }
+  

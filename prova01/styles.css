@@ -1,0 +1,33 @@
+#slideshow {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+
+#slideshow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+#slideshow:hover img {
+  transform: scale(1.05);
+}
+
+#promoInfo {
+  text-align: center;
+  margin-top: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#selectCategory {
+  display: block;
+  margin: 10px auto;
+}
