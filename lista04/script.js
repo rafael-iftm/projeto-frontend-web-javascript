@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var apiKey = config.apiKey;
 
     // Constrói a URL da API com a chave da API incluída
-    var apiUrl = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`;
+    var apiUrl = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=pt`;
 
     // Faz uma requisição para a API
     fetch(apiUrl)
