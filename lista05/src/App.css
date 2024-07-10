@@ -1,0 +1,96 @@
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App-header {
+  background-color: #fff;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #343a40;
+}
+
+.App-content {
+  padding: 20px;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-section, .content-section {
+  margin: 40px 0;
+  max-width: 1200px;
+}
+
+.info-section h2, .content-section h3 {
+  font-weight: bold;
+  color: #343a40;
+  margin-bottom: 20px;
+}
+
+.info-section p {
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+.info-boxes, .content-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+}
+
+.info-box, .content-box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-box:hover, .content-box:hover {
+  border-color: #007BFF;
+  transform: translateY(-5px);
+}
+
+.info-box:active, .content-box:active {
+  transform: translateY(0);
+}
+
+.info-box {
+  font-weight: 500;
+  color: #007BFF;
+  font-size: 16px;
+}
+
+.content-box {
+  font-weight: 500;
+  color: #495057;
+  font-size: 16px;
+}
