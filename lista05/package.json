@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "http://rafael-iftm.github.io/projeto-frontend-web-javascript/",
+  "homepage": "http://rafael-iftm.github.io/projeto-frontend-web-javascript/lista05/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
