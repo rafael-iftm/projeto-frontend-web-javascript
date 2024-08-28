@@ -1,0 +1,11 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+p {
+    text-align: justify;
+    margin: 20px 0px;
+    line-height: 1.5em;    
+}
